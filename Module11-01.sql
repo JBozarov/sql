@@ -1,14 +1,7 @@
  -- SELECT * FROM tekcampers;
  
---  #2 For this problem I used gui to create table 
+-- INSERT INTO tekcampers SELECT * FROM students.tekcamp01; 
 
--- #3, 4:
--- CREATE TABLE tekcampers AS SELECT * FROM students.tekcamp01; 
-
-
-
-
--- #5
 -- ALTER TABLE tekcampers MODIFY COLUMN id INT auto_increment; 
 
 -- INSERT INTO tekcampers(first_name, last_name, gender, education)
@@ -27,12 +20,9 @@
 -- SELECT * FROM tekcampers;
 
 
--- #6
 -- DELETE from tekcampers
 -- WHERE id = 9 or 20 or 26; 
 
-
--- #7
 -- UPDATE tekcampers 
 -- SET education = NULL
 -- WHERE id BETWEEN 1 and 27; 
@@ -65,7 +55,6 @@
 -- where (id=21 or id=37 or id = 3);
 
 
--- #8
 --  select * from tekcampers 
 --  where length(last_name) > 7; 
 
@@ -98,15 +87,12 @@
 -- select * from tekcampers; `ta-mark`
 
 
--- #9
 -- creating new table ta-mark
 -- CREATE TABLE `ta-mark` AS 
 -- SELECT * from tekcampers
 -- WHERE (id=8 or id=32 or id=21 or id=23 or id=25 or id=27 or id=28 or id=29 or id=30 or id=35 or id=36 or id = 38);
 --  select * from `ta-mark`; 
 
-
--- #10
 -- create table hobbies 
 -- (hobby_id int primary key auto_increment, hobby_name varchar(50)); 
 
@@ -135,7 +121,6 @@
 
  -- select * from hobbies; 
 
--- #11
 -- creating aggregate table 
 -- create table hobbiesinmarkgroup  ( 
 -- id int references `ta-mark`(id),
@@ -159,7 +144,6 @@
 -- (38, 8); 
 -- select * from hobbiesinmarkgroup; 
 
-
 -- Prints names of each students with hobbies 
 -- select first_name, last_name, hobby_name from `ta-mark` 
 -- left join hobbiesinmarkgroup
@@ -169,13 +153,10 @@
 
 
 
--- #12 adding new column to tekcampers 
--- alter table tekcampers
--- add column bootcamp varchar(50); 
 
--- select * from tekcampers; 
 
--- #13 adding new column to ta-mark table 
--- alter table `ta-mark`
--- add column bootcamp varchar(50);
--- select * from `ta-mark`; 
+
+
+
+
+
